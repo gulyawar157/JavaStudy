@@ -1,3 +1,24 @@
+# Golden Rules
+
+1. Method overriding with throws keyword
+
+Checked exceptions = compiler-enforced → must handle or declare.
+Since unchecked exceptions are not enforced at compile time, you don’t need try-catch. That’s why your code runs fine without handling and also there is no error.
+
+Unchecked exceptions = runtime-only → no compiler enforcement.
+
+So checked exception  must be handled if we are throwing them. Otherwise we will get error.  
+Unchecked exception should be handled , if we havent done any mistake so it should run fine but in case we have done some  error it should not work.
+
+
+2. Rule of Thumb:
+
+Always catch child exceptions before parent exceptions.
+
+Ordering matters because Java checks catch blocks top to bottom.
+
+
+************************************************************************--------------------
 ![alt text](image-2.png)
 
 ![alt text](image-3.png)
@@ -184,3 +205,4 @@ Methods to Print the Exception Information
 - printStackTrace(): Prints the full stack trace of the exception, including the name, message and location of the error.
 - toString(): Prints exception information in the format of the Name of the exception.
 - getMessage() : Prints the description of the exception
+
